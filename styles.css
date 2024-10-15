@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', monospace; /* FORTRAN-like font */
+    background: url('A_futuristic_background_showing_AI-driven_computat.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #000; /* Black text color */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background for content */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease-in-out;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: textGlow 2s infinite alternate;
+    color: #000; /* Black color for header text */
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #000; /* Black text color for skills */
+}
+
+.timeline li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    font-style: italic;
+    color: #000; /* Black text for timeline */
+}
+
+.timeline li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    color: #4caf50;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textGlow {
+    from {
+        text-shadow: 0 0 10px #4facfe, 0 0 20px #00f2fe;
+    }
+    to {
+        text-shadow: 0 0 20px #4caf50, 0 0 30px #4caf50;
+    }
+}
+
